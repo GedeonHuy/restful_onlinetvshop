@@ -49,3 +49,4 @@ restful_onlinetvshop/.coverage
 restful_onlinetvshop/products/migrations/*
 restful_onlinetvshop/users/migrations/*
 restful_onlinetvshop/brands/migrations/*
+node_modules
