@@ -8,7 +8,7 @@ restful_onlinetvshop/.vscode/*
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
-restful_onlinetvshop/.history
+.history
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -50,4 +50,3 @@ restful_onlinetvshop/products/migrations/*
 restful_onlinetvshop/users/migrations/*
 restful_onlinetvshop/brands/migrations/*
 node_modules/*
-node_modules
