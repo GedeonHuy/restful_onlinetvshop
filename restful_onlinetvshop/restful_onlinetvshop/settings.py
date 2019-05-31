@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # DJANGO APPS
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,11 +40,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
 
+    # FRONTEND APPS
+    'frontend',
+
     # MY APPS
-    'users.apps.UsersConfig',
-    'brands.apps.BrandsConfig',
-    'products.apps.ProductsConfig',
-    'payments.apps.PaymentsConfig',
+    'users',
+    'brands',
+    'products',
+    'payments',
 ]
 
 MIDDLEWARE = [

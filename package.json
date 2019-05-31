@@ -1,7 +1,6 @@
 {
   "name": "restful_onlinetvshop",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development ./restful_onlinetvshop/frontend/src/index.js --output ./restful_onlinetvshop/frontend/static/frontend/main.js",
@@ -19,7 +18,18 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "weak-key": "^1.0.1",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GedeonHuy/restful_onlinetvshop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GedeonHuy/restful_onlinetvshop/issues"
+  },
+  "homepage": "https://github.com/GedeonHuy/restful_onlinetvshop#readme",
+  "description": ""
 }

@@ -1,0 +1,13 @@
+[
+    {
+        "model": "brands.brand",
+        "pk": 1,
+        "fields": {
+            "title": "TV#1",
+            "description": "TV#1 description <br/>Feature #1<br/>Feature #2<br/>Feature #3",
+            "image_url": "Some URL",
+            "date_created": "2019-05-05 00:00:00",
+            "is_deleted": false
+        }
+    }
+]
