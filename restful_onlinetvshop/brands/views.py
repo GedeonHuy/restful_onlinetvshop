@@ -9,4 +9,13 @@ class BrandListCreate(generics.ListCreateAPIView):
     serializer_class = BrandSerializer
 
 class BrandDetail(generics.RetrieveAPIView):
-    pass
+    queryset = Brand.objects.all()
+    serializer_class = BrandSerializer
+
+class BrandUpdate(generics.UpdateAPIView):
+    queryset = Brand.objects.all()
+    serializer_class = BrandSerializer
+
+class BrandDelete(generics.DestroyAPIView):
+    queryset = Brand.objects.all()
+    serializer_class = BrandSerializer

@@ -7,7 +7,7 @@ const Table = ({ data }) =>
   ) : (
     <div className="column">
       <h2 className="subtitle">
-        Showing <strong>{data.length} items</strong>
+        Showing <strong>{data.length} brands</strong>
       </h2>
       <table className="table is-striped">
         <thead>

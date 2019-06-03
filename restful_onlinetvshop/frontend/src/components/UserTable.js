@@ -7,7 +7,7 @@ const UserTable = ({ data }) =>
   ) : (
     <div className="column">
       <h2 className="subtitle">
-        Showing <strong>{data.length} items</strong>
+        Showing <strong>{data.length} users</strong>
       </h2>
       <table className="table is-striped">
         <thead>
