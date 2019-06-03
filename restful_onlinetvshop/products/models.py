@@ -5,7 +5,7 @@ from brands.models import Brand
 
 
 class Product(models.Model):
-    brand = models.ForeignKey(Brand, on_delete=models.CASCADE)
+    brand = models.ForeignKey(Brand, on_delete=models.CASCADE) # never cascade in production
     title = models.CharField(_('Title'), max_length=120, blank=False)
     price = models.IntegerField(_('Price'))
     quantity = models.IntegerField(_('Quantity'), default=15)

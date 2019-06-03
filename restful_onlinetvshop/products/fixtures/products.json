@@ -26,5 +26,33 @@
             "is_deleted": false,
             "brand": 1
         }
+    },
+    {
+        "model": "products.product",
+        "pk": 3,
+        "fields": {
+            "title": "TV#3",
+            "price": 1999,
+            "quantity": 15,
+            "description": "TV#3 description <br/>Feature #1<br/>Feature #2<br/>Feature #3",
+            "image_url": "Some URL",
+            "date_created": "2019-05-05 00:00:00",
+            "is_deleted": false,
+            "brand": 2
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 4,
+        "fields": {
+            "title": "TV#4",
+            "price": 2999,
+            "quantity": 15,
+            "description": "TV#4 description <br/>Feature #1<br/>Feature #2<br/>Feature #3",
+            "image_url": "Some URL",
+            "date_created": "2019-05-05 00:00:00",
+            "is_deleted": false,
+            "brand": 2
+        }
     }
 ]

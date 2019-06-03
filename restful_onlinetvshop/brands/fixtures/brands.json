@@ -3,9 +3,18 @@
         "model": "brands.brand",
         "pk": 1,
         "fields": {
-            "title": "TV#1",
-            "description": "TV#1 description <br/>Feature #1<br/>Feature #2<br/>Feature #3",
-            "image_url": "Some URL",
+            "title": "Brand#1",
+            "description": "Brand#1 description <br/>Feature #1<br/>Feature #2<br/>Feature #3",
+            "date_created": "2019-05-05 00:00:00",
+            "is_deleted": false
+        }
+    },
+    {
+        "model": "brands.brand",
+        "pk": 2,
+        "fields": {
+            "title": "Brand#2",
+            "description": "Brand#2 description <br/>Feature #1<br/>Feature #2<br/>Feature #3",
             "date_created": "2019-05-05 00:00:00",
             "is_deleted": false
         }

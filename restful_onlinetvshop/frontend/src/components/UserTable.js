@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import key from "weak-key";
-const Table = ({ data }) =>
+const UserTable = ({ data }) =>
   !data.length ? (
     <p>Nothing to show</p>
   ) : (
@@ -12,20 +12,28 @@ const Table = ({ data }) =>
       <table className="table is-striped">
         <thead>
           <tr>
-            {Object.entries(data[0]).map(el => <th key={key(el)}>{el[0]}</th>)}
+            <th>id</th>
+            <th>Username</th>
+            <th>First</th>
+            <th>Last</th>
+            <th>Email</th>
           </tr>
         </thead>
         <tbody>
-          {data.map(el => (
-            <tr key={el.id}>
-              {Object.entries(el).map(el => <td key={key(el)}>{el[1]}</td>)}
+          {data.map((el, index) => (
+            <tr key={index}>
+              <td>{index+1}</td>
+              <td>{(Object.values(el))[4]}</td>
+              <td>{(Object.values(el))[5]}</td>
+              <td>{(Object.values(el))[6]}</td>
+              <td>{(Object.values(el))[7]}</td>
             </tr>
           ))}
         </tbody>
       </table>
     </div>
   );
-Table.propTypes = {
+UserTable.propTypes = {
   data: PropTypes.array.isRequired
 };
-export default Table;
+export default UserTable;
