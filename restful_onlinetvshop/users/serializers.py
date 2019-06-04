@@ -12,6 +12,13 @@ class UserSerializer(serializers.ModelSerializer):
         model = CustomUser
         fields = '__all__'
 
+class OrderCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Order
+        fields = [
+            'owner',
+        ]
+
 class OrderSerializer(serializers.ModelSerializer):
     class Meta:
         model = Order
