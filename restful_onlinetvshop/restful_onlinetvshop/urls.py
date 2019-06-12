@@ -14,9 +14,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import include, path
+from django.views.generic import TemplateView
 
 urlpatterns = [
+    # home
+    path('home/', TemplateView.as_view(template_name="home.html"), name="home"),
+
     # admin site
     path('admin/', admin.site.urls),
 
@@ -28,4 +32,5 @@ urlpatterns = [
 
     # frontend
     path('', include('frontend.urls')),
+    path('contact/', include('contact_form.akismet_urls')),
 ]

@@ -14,14 +14,14 @@ brandWrapper ? ReactDOM.render(<Brand />, brandWrapper) : null;
 
 const Product = () => (
   <DataProvider endpoint="api/product/" 
-                render={data => <ProductTable data={data} />} />
+                render={data => <Table data={data} />} />
 );
 const productWrapper = document.getElementById("products");
 productWrapper ? ReactDOM.render(<Product />, productWrapper) : null;
 
 const User = () => (
   <DataProvider endpoint="api/user/" 
-                render={data => <UserTable data={data} />} />
+                render={data => <Table data={data} />} />
 );
 const userWrapper = document.getElementById("users");
 userWrapper ? ReactDOM.render(<User />, userWrapper) : null;

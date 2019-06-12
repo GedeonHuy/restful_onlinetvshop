@@ -10,7 +10,7 @@ from .models import (
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
-        fields = '__all__'
+        exclude = ('password', 'last_login', 'date_joined', 'groups', 'user_permissions')
 
 class OrderCreateSerializer(serializers.ModelSerializer):
     class Meta:

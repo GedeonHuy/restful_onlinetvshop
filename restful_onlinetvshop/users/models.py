@@ -2,11 +2,10 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from products.models import Product
+from django_kernel.models.account import Account
 
-class CustomUser(AbstractUser):
+class CustomUser(Account):
     # add additional fields in here
-    dob = models.DateField(_('Date of birth'), max_length=8, blank=True, null=True)
-    address = models.CharField(_('Address'), max_length=120, blank=True, null=True)
     
     def __str__(self):
         return self.username
