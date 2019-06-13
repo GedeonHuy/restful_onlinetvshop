@@ -1,3 +1,5 @@
+import uuid
+
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
@@ -5,6 +7,7 @@ from brands.models import Brand
 
 
 class Product(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     brand = models.ForeignKey(Brand, on_delete=models.CASCADE) # never cascade in production
     title = models.CharField(_('Title'), max_length=120, blank=False)
     price = models.IntegerField(_('Price'))

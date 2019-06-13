@@ -4,5 +4,11 @@
 {% block content %}
 
 <h1>THIS IS HOME!</h1>
+<hr/>
+<div class="row">{{ object.brand.id }}</div>
+<hr/>
+<div class="row">{{ object.brand.title }}</div>
+<hr/>
+<div class="row">{{ object.brand.description|safe }}</div>
 
 {% endblock %}

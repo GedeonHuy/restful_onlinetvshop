@@ -1,7 +1,6 @@
 [
     {
         "model": "products.product",
-        "pk": 1,
         "fields": {
             "title": "TV#1",
             "price": 6999,
@@ -15,7 +14,6 @@
     },
     {
         "model": "products.product",
-        "pk": 2,
         "fields": {
             "title": "TV#2",
             "price": 5999,
@@ -29,7 +27,6 @@
     },
     {
         "model": "products.product",
-        "pk": 3,
         "fields": {
             "title": "TV#3",
             "price": 1999,
@@ -43,7 +40,6 @@
     },
     {
         "model": "products.product",
-        "pk": 4,
         "fields": {
             "title": "TV#4",
             "price": 2999,
