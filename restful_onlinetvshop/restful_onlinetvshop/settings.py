@@ -10,6 +10,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 
+from django_kernel import django_kernel 
+
 # This is where you set this file to become YOUR OWN PROJECT SETTING
 PROJECT_NAME = 'restful_onlinetvshop'
 # You'll also want to configure the STATIC FILES at the bottom of this file
@@ -43,10 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'contact_form',
-
-    # DJANGO KERNEL
-    'django_kernel',
 
     # FRONTEND APPS
     'frontend',
@@ -56,7 +54,8 @@ INSTALLED_APPS = [
     'brands',
     'products',
     'payments',
-]
+
+] + django_kernel.CORE_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

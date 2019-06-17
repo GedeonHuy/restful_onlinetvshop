@@ -1,0 +1,8 @@
+flake8
+autopep8
+httpretty
+pytest
+pytest-django
+pytest-cov
+factory_boy
+coverage

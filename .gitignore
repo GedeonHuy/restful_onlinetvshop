@@ -39,7 +39,7 @@ $RECYCLE.BIN/
 *.pyc
 
 # environment libraries
-restful_onlinetvshop/env/*
+env/*
 
 # coverage
 restful_onlinetvshop/.coverage

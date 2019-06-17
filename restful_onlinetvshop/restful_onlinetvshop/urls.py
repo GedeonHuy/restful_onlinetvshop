@@ -32,5 +32,4 @@ urlpatterns = [
 
     # frontend
     path('', include('frontend.urls')),
-    path('contact/', include('contact_form.akismet_urls')),
 ]
