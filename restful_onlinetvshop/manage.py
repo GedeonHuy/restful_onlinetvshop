@@ -3,9 +3,10 @@
 import os
 import sys
 
+PROJECT_NAME = 'restful_onlinetvshop'
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'restful_onlinetvshop.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', PROJECT_NAME + '.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

@@ -10,10 +10,12 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 
-from django_kernel import django_kernel 
+from django_kernel import django_kernel
 
-# This is where you set this file to become YOUR OWN PROJECT SETTING
-PROJECT_NAME = 'restful_onlinetvshop'
+from manage import PROJECT_NAME
+
+# Go to manage.py file at the project root folder to change the default PROJECT_NAME
+# into your own project name
 # You'll also want to configure the STATIC FILES at the bottom of this file
 
 # Set your Authentication User Model

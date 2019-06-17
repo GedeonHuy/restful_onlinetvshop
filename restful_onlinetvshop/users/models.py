@@ -2,7 +2,7 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from products.models import Product
-from django_kernel.models import Account
+from django_kernel.django_kernel.models import Account
 
 class CustomUser(Account):
     # add additional fields in here
